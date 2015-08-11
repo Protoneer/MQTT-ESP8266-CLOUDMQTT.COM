@@ -75,7 +75,7 @@ void SendTempHumid(){
 
     if (isnan(h) || isnan(t)) {
       Serial.println("Failed to read from DHT sensor!");
-      return;
+      //return; This will ensure that data is always sent
     }
 
     Serial.print("Humidity: "); 
